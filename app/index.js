@@ -15,5 +15,15 @@ const server = http.createServer((req, res) => {
         const output = tempOverview.replace("{%PRODUCT_CARDS}", card)
 
         res.end(output)
-    } 
+    } else {
+        res.writeHead(404, {
+            'Content-type': 'text/html',
+            'my-owne-header': 'Error-404'
+        })
+        res.end('page not found!')
+    }
 }) 
+
+server.listen(8000, '127.0.0.1', () => {
+ console.log('Server is Lisining to request on port 8000')
+})
