@@ -3,8 +3,10 @@ FROM node:18
 
 WORKDIR /app
 
+COPY . /app/
+
 RUN npm install node
 
 EXPOSE 8000
 
-CMD [ "node", "index.js" ]
+CMD [ "node", "app/index.js"]
