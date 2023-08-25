@@ -1,5 +1,6 @@
 # Node Version 18
 FROM node:18
+COPY package*.json ./
 
 WORKDIR /app
 
