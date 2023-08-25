@@ -3,6 +3,9 @@ const http = require("http")
 const path = require('path')
 const url = require("url")
 
+// Constants
+const PORT = 8000;
+
 const replaceTemplet = require('./module/replaceTemplets'); 
 
 // Read File Sync
@@ -33,6 +36,6 @@ const server = http.createServer((req, res) => {
     }
 }) 
 
-server.listen(8000, () => {
- console.log('Server is Lisining to request on port 8000')
+server.listen(PORT, () => {
+ console.log(`Server is Listen on Port: ${PORT}`)
 })
