@@ -27,9 +27,18 @@ Now it will install nodejs to this image,
 after this is finsh you can se next run
  
 
-## Usage 
+## Run 
+let's run the docker image now, 
+```
+docker run -p 8000 name
+ ```
+
+If you have any problem contact me 
+ 
+
 
 ## Contributing
-
+- [jonas-schmedtmann-course-on-nodeJs](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/)
 ## License
 
+- [MIT]()
