@@ -30,7 +30,7 @@ after this is finsh you can se next run
 ## Run 
 let's run the docker image now, 
 ```
-docker run -p 8000 name
+docker run -p 8000:8000  kent-top10
  ```
 
 If you have any problem contact me 
